@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fdfdfd;
   color: #1a1a1a;
   font-family: 'Space Grotesk', sans-serif;
   display: flex;
@@ -19,7 +19,7 @@ body {
 
 .container {
   text-align: center;
-  max-width: 700px;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -27,17 +27,26 @@ body {
   font-size: 2.5rem;
   font-weight: 600;
   text-transform: lowercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   letter-spacing: 0.03em;
+}
+
+.bio {
+  transform: scaleX(-1);
+  display: inline-block;
+  font-size: 1rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
 }
 
 .band-photo {
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   height: auto;
   margin-bottom: 1rem;
   object-fit: cover;
-  /* Removed border-radius and box-shadow */
 }
 
 .social a {
@@ -51,3 +60,11 @@ body {
   color: #0077cc;
   text-decoration: underline;
 }
+
+.mirrored {
+  transform: scaleX(-1);
+  display: inline-block;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
